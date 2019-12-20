@@ -14,6 +14,6 @@ WORKDIR /
 
 VOLUME ["/smartdns"]
 
-EXPOSE 53
+EXPOSE 5335
 
 CMD ["/start.sh"]
