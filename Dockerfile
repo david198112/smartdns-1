@@ -1,6 +1,6 @@
 FROM alpine
 
-LABEL maintainer="Ghostry <ghostry.green@gmail.com>"
+LABEL maintainer="dehuixu198112"
 
 RUN wget https://github.com/pymumu/smartdns/releases/download/Release28/smartdns.1.2019.12.15-1028.x86_64-linux-all.tar.gz \
   && tar zxvf smartdns.*.tar.gz \
@@ -14,6 +14,6 @@ WORKDIR /
 
 VOLUME ["/smartdns"]
 
-EXPOSE 5335
+EXPOSE 53
 
 CMD ["/start.sh"]
